@@ -1,0 +1,18 @@
+Smallest FOV
+Lowest sens
+
+tp to 73.7 69.0 -126.7
+turn on f3
+align your green line with the left center of the eye (the leftmost pixel of the tallest black section in the middle)
+move left until it changes 1/10th of a degree, then move back suuuper slowly until it changes again
+    If there is a little bit of green showing between the vertical green line and the black middle of the eye, add -0.3 to your angle
+    If there's none, don't change it
+    If there's a little bit of black showing to the left of your vertical green line and the middle thing of the eye, add 0.3 to your angle
+
+
+
+
+POSITIVE ANGLES
+    f - ((x-3)) + 0.01
+NEGATIVE ANGLES
+    f - ((x-3)*0.01)

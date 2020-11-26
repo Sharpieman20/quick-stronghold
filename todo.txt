@@ -1,0 +1,4 @@
+NEXT STEPS
+
+Improve p(d_1) and p(d_2)
+Incorporate improved versions into p(d)

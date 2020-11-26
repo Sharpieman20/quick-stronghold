@@ -1,0 +1,54 @@
+Let x_i, y_i be the coordinates for each of our throws
+
+Let s_0 be the stronghold that our throw is pointing towards
+Let s_1 and s_2 be the strongholds that our throw is not pointing towards
+
+Let t_i be the angle of the stronghold i with respect to the origin
+    North is X, East is X, West is X, South is X
+
+t_0 has a uniform distribution (0, 2pi)
+t_1 = t_0 + ...
+t_2 = t_0 + ...
+
+Let r_i be the length of the vector from the origin to the stronghold i with coordinates x and y
+    r_i = Vector Length((0, 0), (x, y))
+
+Let d_i_j be the distance of the stronghold i after throw j
+    d_i_j = ...
+
+Let o_i_j be the maximum distance of the stronghold i after throw j
+    After a throw from the origin, this would be 1152
+    o_i_j = ...
+
+Let n_i_j be the minimum distance of the stronghold i after throw j
+    After a throw from the origin, this would be 640
+    n_i_j = ...
+
+p_1(d) = (o_1 - x) / (o_1 - n_1)
+p_2(d) = (o_2 - x) / (o_2 - n_2)
+p(d) = p_1(d) * p_2(d)
+
+E(Y) = y * p(y) * dy
+
+E(D) = 1/(o_0 - n_0) integral_(n_0)^(o_0) x×(o_1 - x)/(o_1 - n_1)×(o_2 - x)/(o_2 - n_2) dx
+
+E(D) = (4 n_0^3 (o_1 + o_2) - 6 n_0^2 o_1 o_2 - 3 n_0^4 + o_0^2 (3 o_0^2 - 4 (o_1 + o_2) o_0 + 6 o_1 o_2))/(12 (o_0 - n_0) (n_1 - o_1) (n_2 - o_2))
+
+However, this is an expected value of D in scenarios where the throw is valid
+
+In order to apply it to all scenarios, we need to divide by the total chances of the universe being valid,
+
+\int_{n_{0}}^{o_{0}}p\left(d\right)dd
+
+-((n_0 - o_0) (n_0 (2 o_0 - 3 (o_1 + o_2)) + 2 n_0^2 + 2 o_0^2 + 6 o_1 o_2 - 3 o_0 (o_1 + o_2)))/(6 (o_0 - n_0) (n_1 - o_1) (n_2 - o_2))
+
+Final E(D) is this:
+
+( integral_(n_0)^(o_0) x×(o_1 - x)/(o_1 - n_1)×(o_2 - x)/(o_2 - n_2) dx)/( integral_(n_0)^(o_0) (o_1 - x)/(o_1 - n_1)×(o_2 - x)/(o_2 - n_2) dx)
+
+https://www.wolframalpha.com/input/?i=%28integral+of+x%28%28o_1+-+x%29%2F%28o_1+-+n_1%29%29%28%28o_2+-+x%29%2F%28o_2+-+n_2%29%29+from+n_0+to+o_0%29%2F%28%28integral+of+%28%28o_1+-+x%29%2F%28o_1+-+n_1%29%29%28%28o_2+-+x%29%2F%28o_2+-+n_2%29%29+from+n_0+to+o_0%29%29
+
+-(4 n_0^3 (o_1 + o_2) - 6 n_0^2 o_1 o_2 - 3 n_0^4 + o_0^2 (3 o_0^2 - 4 (o_1 + o_2) o_0 + 6 o_1 o_2))/(2 (n_0 - o_0) (n_0 (2 o_0 - 3 (o_1 + o_2)) + 2 n_0^2 + 2 o_0^2 + 6 o_1 o_2 - 3 o_0 (o_1 + o_2)))
+
+For an origin throw, this gives us 768
+

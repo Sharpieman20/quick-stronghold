@@ -1,0 +1,13 @@
+APPROX -48
+    add 0.06 to angle
+APPROX -15
+    subtract -0.43 from angle
+APPROX -168
+    add 0.464 from first throw
+    add 0.4055 from second throw
+APPROX -4
+    subtract 0.54 from first throw
+    subtract 0.573 from second throw
+APPROX 32
+    FIRST THROW ADD 0.17685
+    SECOND THROW ADD 0.18105

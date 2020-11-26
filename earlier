@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+python3 earlier-versions-stronghold.py 32616448
+open strongholds.png

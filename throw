@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+cd one_throw
+python3 guess_one_throw.py 2038528
+cd ..

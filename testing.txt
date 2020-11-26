@@ -1,0 +1,18 @@
+input_x = -201.1
+input_z = 41.3
+input_f = -4.4
+
+throw2_x = -323.9
+throw2_z = 738.7
+throw2_f = -33.1
+
+throw3_x = -123.7
+throw3_z = 1037.1
+throw3_f = 136.27
+
+COORDS_SIGMA = 0.05
+F_SIGMA = 0.1
+
+GUESS: -124.42 1037.93
+INTERCEPT: -123.822 1045.619
+CORRECT: -180 977

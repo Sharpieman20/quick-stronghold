@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+python3 guess_two_throw.py 2038528

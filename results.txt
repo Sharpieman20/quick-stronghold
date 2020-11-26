@@ -1,0 +1,11 @@
+Wrote a new script to find best blind travel distance
+The main factors it accounts for in comparison to the old blind travel calculation is i've added parameters to only care about the top X% of luck (with regard to closest stronghold distance upon exiting the portal) as well as a scalable tradeoff (currently 3:1) between blocks traveled in the nether and blocks traveled in the overworld
+
+Here are the preliminary results:
+           **RATIO**    5.0    3.0     2.0    1.5    1.0
+     **TOP%**
+    25
+    50
+    100                        
+
+Currently running a more in-depth sim (takes some hours to run) and generating some visuals

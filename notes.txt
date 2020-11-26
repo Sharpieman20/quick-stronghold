@@ -1,0 +1,9 @@
+10 block square around exact coordinate that the pearls are pointing to is acceptable
+
+
+MIN DIST FOR RISING = 12 BLOCKS
+Trials
+12.1 RISE
+11.3 FALL
+11.7 FALL
+11.9 FALL

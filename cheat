@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+python3 faster-stronghold.py 5000000
+open strongholds.png
